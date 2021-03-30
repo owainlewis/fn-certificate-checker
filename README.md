@@ -14,4 +14,7 @@ echo '{\
 "url": "https://apigateway.us-ashburn-1.oci.oraclecloud.com", \
 "cn": "identity.us-ashburn-1.oraclecloud.com"\
 }' | fn invoke serverless certificate-check
+
+➜  certificate-check git:(master) echo '{"url": "https://github.com", "cn": "github.com"}' | fn invoke serverless certificate-check
+Days remaining: 365
 ```
