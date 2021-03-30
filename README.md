@@ -10,5 +10,8 @@ fn deploy --app myapp
 
 ## Example
 ```
-echo '{"url": "https://apigateway.us-ashburn-1.oci.oraclecloud.com", "cn": "identity.us-ashburn-1.oraclecloud.com"}' | fn invoke serverless certificate-check
+echo '{\
+"url": "https://apigateway.us-ashburn-1.oci.oraclecloud.com", \
+"cn": "identity.us-ashburn-1.oraclecloud.com"\
+}' | fn invoke serverless certificate-check
 ```
