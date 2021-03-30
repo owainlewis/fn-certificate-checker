@@ -18,6 +18,7 @@ public class Function {
      * Given an [[X509Certificate]], get the number of days left until the certificate expires
      *
      * @param cert An [[X509Certificate]]
+     *
      * @return The number of days left until the certificate expires
      */
     public long getDaysUntilExpiryFromCertificate(X509Certificate cert) {
@@ -31,7 +32,8 @@ public class Function {
      * Fetch a certificate from a URL, making sure that the right cert is selected based on the CN
      *
      * @param url String the url to fetch a certificate from
-     * @param cn  String the CN of the certificate you want to check against
+     * @param cn String the CN of the certificate you want to check against
+     *
      * @return Optional<Long> the number of days left until expiry
      * @throws IOException
      */
@@ -51,7 +53,6 @@ public class Function {
     }
 
     public String handleRequest(CertificateCheckInput input) {
-
         System.out.println("Checking certificate age for " + input.getUrl());
 
         try {
